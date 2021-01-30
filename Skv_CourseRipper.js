@@ -59,7 +59,7 @@ async function ripData(doc)
     var course_wrapper = doc.querySelector("article > div > section");
     var courseCategory = new Object();
     var courseCategoryName = doc.querySelector("article > header").children[0].innerText;
-    courseCategory.name = courseCategoryName.substring(courseCategoryName.indexOf('-')+1);
+    courseCategory.name = courseCategoryName.substring(courseCategoryName.indexOf('-')+2);
     var courseArray = new Array();
     console.log("Ripping category: "+courseCategory.name);
 
